@@ -1,0 +1,47 @@
+<div class="container-fluid">  
+    <h2>Publish Your Blog Post Here</h2> 
+  <form #myForm="ngForm" ngNativeValidate>
+      
+    <div class = "form-group">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" [(ngModel)]="editObject.title" class="form-control"
+          required >
+    </div>
+
+      <div class = "form-group">
+          <label for="category">Categories</label>
+          <input type="text" name="category" id="categories" [(ngModel)]="editObject.category" class="form-control" 
+          required >
+      </div>
+      
+      <div class = "form-group">
+          <label for="content">Content</label>
+          <textarea name="Content" id="Content" [(ngModel)]="editObject.Content" class="form-control" 
+          required> </textarea>
+      </div>
+      <h4></h4>
+    <button type="button" class="btn btn-primary" (click)="publishPost(myForm.value)"
+      *ngIf="!isUsed">Publish New Post</button> 
+      <span>&nbsp;
+       <button type="button" class="btn" style="background-color: greenyellow;"
+       *ngIf="isUsed" (click)="updateBlog()">Update</button> 
+      </span>  
+  </form>
+
+<p></p>
+
+<div class="container-fluid" *ngFor="let blog of blogposts"> 
+  <div class= "card mt-4">
+    <div class="card-body">
+    <h4>{{blog.title}}</h4>
+    <h6>{{blog.category}}</h6>
+    <p>{{blog.Content}}</p>
+    <button class="btn btn-danger" (click)="deletePost(blog)">Delete</button><span>&nbsp;
+    <button class="btn" style="background-color: lightblue;" (click)="editPost(blog)">
+    Edit</button> &nbsp;
+    </span>
+    </div>
+</div>
+  <p></p>
+  </div>
+</div>

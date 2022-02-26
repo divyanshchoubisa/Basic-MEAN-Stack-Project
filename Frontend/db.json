@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "title": "Welcome To The Blog",
+      "category": "Welcome Message",
+      "content": "Happy Blogging.",
+      "id": 1
+    },
+    {
+      "title": "Cricket World Cup",
+      "category": "Sports",
+      "content": "All are going to watch !",
+      "id": 2
+    },
+    {
+      "title": "Football World Cup",
+      "category": "Sports",
+      "content": "All are going to watch. Football is a great game.",
+      "id": 3
+    },
+    {
+      "title": "Dot Net Development",
+      "category": "Software Engineering",
+      "content": "Build Software with Dot Net.",
+      "id": 5
+    },
+    {
+      "title": "Nagarro",
+      "category": "IT Company",
+      "content": "Great Place to Work ! Lets Work !",
+      "id": 6
+    }
+  ]
+}
