@@ -1,2 +1,2 @@
 # Basic-MEAN--Stack-Project
- Basic MEAN Stack Project with Node-Express Backend Angular Frontend and MongoDb Database
+ This a a very basic MEAN Stack Application with Introduction to Angular and NodeJS.
